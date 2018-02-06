@@ -11,3 +11,11 @@
 - The /boot/grub2/grubenv file cannot be manually edited. Use the following command instead:
     - `grub2-set-default 2`, where `2` is the entry position
     - `grub2-editenv list`
+
+# Taken from: https://www.tecmint.com/install-upgrade-kernel-version-in-centos-7/
+
+1. Edit `/etc/default/grub`
+2. Recreate the kernel configuration
+```bash
+grub2-mkconfig -o /boot/grub2/grub.cfg
+```
