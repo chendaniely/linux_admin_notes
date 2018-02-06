@@ -14,3 +14,5 @@ List all availiable kernels:
 
 - `yum install yum-plugin-fastestmirror`
 - `yum --enablerepo=elrepo-kernel install kernel-ml`
+
+You can remove packages with `yum remove` or if you do not want to remove dependencies, `sudo rpm --nodeps -e kernel-headers`, where `kernel-headers` are the packages to remove
